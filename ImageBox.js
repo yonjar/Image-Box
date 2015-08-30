@@ -50,7 +50,7 @@ $(function(){
 		});
 
 		/* 绑定点击消失事件 */
-		$(".image-box-plugin img").bind("click",function(){
+		$(".image-box-plugin img,.image-box-plugin").bind("click",function(){
 			$(this).parent().fadeOut(500,function(){
 				$(this).remove();
 			});
