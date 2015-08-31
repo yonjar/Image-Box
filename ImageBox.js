@@ -3,7 +3,7 @@ $(function(){
 	$(".ImageBox").click(function(){
 
 		/* 添加元素 */
-		$("body").append('<div class="image-box-plugin"><img src="'+$(this).attr('src')+'"></div>');
+		$("body").append('<div class="image-box-plugin"><div class="image-box-container"><img src="'+$(this).attr('src')+'"></div></div>');
 
 		/* 定义变量 */
 		var imgW = $(this).width(),
@@ -50,9 +50,9 @@ $(function(){
 		});
 
 		/* 绑定点击消失事件 */
-		$(".image-box-plugin img").bind("click",function(){
-			$(this).parent().fadeOut(500,function(){
-				$(this).remove();
+		$(".image-box-plugin img, .image-box-plugin, .image-box-container").bind("click",function(){
+			$(".image-box-plugin").fadeOut(500,function(){
+				$(".image-box-plugin").remove();
 			});
 		});
 	});
