@@ -10,14 +10,18 @@
 	display: none;
 }
 .image-box-plugin img{
-	position: absolute;
-	top: 50%;
-	transform: translate3D(0,-50%,0);
-	-webkit-transform: translate3D(0,-50%,0);
 	width: auto;
 	max-width: 100%;
 	margin:0 auto;
 	display: table-cell;
 	vertical-align: middle;
+	text-align: center;
+}
+.image-box-plugin .image-box-container{
+	position: absolute;
+	top: 50%;
+	transform: translate3D(0,-50%,0);
+	-webkit-transform: translate3D(0,-50%,0);
+	width: 100%;
 	text-align: center;
 }
